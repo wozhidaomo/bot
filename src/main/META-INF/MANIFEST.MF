@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Class-Path: jsoup-1.12.1.jar commons-collections-3.2.2.jar commons-log
+ ging-1.2.jar ezmorph-1.0.6.jar lombok-1.18.8.jar HyCommonUtils-1.4.0.
+ 207.jar HyLogger-4.0.254.jar PicqBotX-4.10.1.928.jar httpclient-4.5.8
+ .jar javax.websocket-api-1.1.jar commons-codec-1.11.jar fastjson-1.2.
+ 58.jar jetty-util-9.4.18.v20190429.jar javax-websocket-client-impl-9.
+ 4.2.v20170220.jar httpcore-4.4.11.jar gson-2.8.5.jar websocket-client
+ -9.4.18.v20190429.jar websocket-common-9.4.18.v20190429.jar jetty-htt
+ p-9.4.18.v20190429.jar commons-beanutils-1.9.3.jar hutool-all-4.5.10.
+ jar commons-lang-2.6.jar jetty-client-9.4.18.v20190429.jar MathParser
+ .org-mXparser-4.2.0.jar jetty-xml-9.4.18.v20190429.jar jetty-io-9.4.1
+ 8.v20190429.jar websocket-api-9.4.18.v20190429.jar jansi-1.17.1.jar
+Main-Class: com.zhuoyao.bot.BotApplication
+
