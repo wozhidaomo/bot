@@ -8,6 +8,8 @@ package com.zhuoyao.listener;
 import cc.moecraft.icq.event.EventHandler;
 import cc.moecraft.icq.event.IcqListener;
 import cc.moecraft.icq.event.events.message.EventGroupMessage;
+import cc.moecraft.icq.sender.message.MessageBuilder;
+import cc.moecraft.icq.sender.message.components.ComponentImage;
 import com.zhuoyao.limit.LimitQuery;
 
 import java.util.*;
@@ -32,7 +34,7 @@ public class Listener extends IcqListener {
     }
 
     @EventHandler
-    public void onPMEvent(EventGroupMessage event) {
+    public void onGroupMessageEvent(EventGroupMessage event) {
         System.out.println("接到消息");
 
         try {
@@ -58,6 +60,8 @@ public class Listener extends IcqListener {
                     System.out.println("测试人员请求中，无限制。");
                     this.domessage(event);
                 }
+            }else if(event.getMessage().trim().startsWith("图来")){
+                event.getHttpApi().sendGroupMsg(684898885,new ComponentImage("data\\image\\FCD53D272D102C59B79528D21D739FB1.jpg.cqimg").toString());
             }
         } catch (Exception var5) {
             var5.printStackTrace();

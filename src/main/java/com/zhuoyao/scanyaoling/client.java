@@ -33,40 +33,40 @@ public class client {
             // 这里用的binance的socket接口，国内调用需要VPN，使用换成你的就行
 //            String url = "wss://stream.binance.com:9443/ws/ethbtc@ticker";
 //            String url = "wss://stream.binance.com:9443/ws/ethbtc@depth20";
-            String url = "wss://publicld.gwgo.qq.com?account_value=0&account_type=0&appid=0&token=0";
-            URI uri = new URI(url);
-//            String currentversion = "sprite_0e4ebf1344bf35582f7504ee265f32eb.json";
-//            String version = "v0.9.512.2316";
+//            String url = "wss://publicld.gwgo.qq.com?account_value=0&account_type=0&appid=0&token=0";
+//            URI uri = new URI(url);
+////            String currentversion = "sprite_0e4ebf1344bf35582f7504ee265f32eb.json";
+////            String version = "v0.9.512.2316";
+////
+//            WssVo wv = new WssVo();
+//            wv.setRequest_type("1001");
+//            wv.setLongtitude("39.954474285439886");
+//            wv.setLatitude("116.32746934890747");
+//            wv.setRequestid("1001");
+//            wv.setPlatform("0");
+//            System.out.println(JSONObject.toJSONString(wv));
+//            System.out.println(JSONObject.toJSONString(wv).length());
+//            WebSocketClient mWs = new WebSocketClient(uri) {
+//                @Override
+//                public void onOpen(ServerHandshake serverHandshake) {
 //
-            WssVo wv = new WssVo();
-            wv.setRequest_type("1001");
-            wv.setLongtitude("39.954474285439886");
-            wv.setLatitude("116.32746934890747");
-            wv.setRequestid("1001");
-            wv.setPlatform("0");
-            System.out.println(JSONObject.toJSONString(wv));
-            System.out.println(JSONObject.toJSONString(wv).length());
-            WebSocketClient mWs = new WebSocketClient(uri) {
-                @Override
-                public void onOpen(ServerHandshake serverHandshake) {
-
-                }
-
-                @Override
-                public void onMessage(String s) {
-                    System.out.println(s);
-                }
-
-                @Override
-                public void onClose(int i, String s, boolean b) {
-
-                }
-
-                @Override
-                public void onError(Exception e) {
-
-                }
-            };
+//                }
+//
+//                @Override
+//                public void onMessage(String s) {
+//                    System.out.println(s);
+//                }
+//
+//                @Override
+//                public void onClose(int i, String s, boolean b) {
+//
+//                }
+//
+//                @Override
+//                public void onError(Exception e) {
+//
+//                }
+//            };
 //            mWs.connect();
 //
 //            Thread.sleep(5000);
@@ -107,6 +107,8 @@ public class client {
 //            System.out.println("haha");
 
 //            mWs.send("123");
+
+            System.out.println(116.374493*1e6);
         } catch (Exception e) {
             e.printStackTrace();
         }
